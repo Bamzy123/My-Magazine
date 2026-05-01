@@ -120,3 +120,29 @@ body {
     line-height: var(--line-height-heading);
     margin: var(--spacing-md) 0;
 }
+
+.story {
+    background-color: var(--color-bg-card);
+    padding: var(--spacing-2xl);
+}
+
+.story-1 {
+    grid-area: story-1;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+    background-color: var(--color-bg-dark-story);
+    color: var(--color-text-white);
+}
+
+.story h3 {
+    font-size: var(--font-size-story-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-story-heading);
+    margin: var(--spacing-sm) 0 8px;
+}
