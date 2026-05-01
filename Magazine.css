@@ -146,3 +146,13 @@ body {
     line-height: var(--line-height-story-heading);
     margin: var(--spacing-sm) 0 8px;
 }
+
+.story p, .featured-content p {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--color-text-muted);
+}
+
+.story-3 p, .story-3 h3 {
+    color: var(--color-text-dark-story)
+}
