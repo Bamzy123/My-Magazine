@@ -156,3 +156,28 @@ body {
 .story-3 p, .story-3 h3 {
     color: var(--color-text-dark-story)
 }
+
+.tag {
+    color: var(--color-accent-gold);
+    font-size: var(--font-size-tag);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-tap);
+}
+
+.read-more {
+    color: var(--color-accent-green);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    margin-top: var(--spacing-lg);
+    display: inline-block;
+}
+
+.mag-footer {
+    grid-area: footer;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-footer);
+    text-align: center;
+    padding: var(--spacing-xl);
+    font-size: var(--font-size-footer);
+}
