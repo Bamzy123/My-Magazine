@@ -1,0 +1,97 @@
+:root {
+    /* colors */
+    --color-bg-page: #f5f5f0;
+    --color-bg-dark: #1a1a1a;
+    --color-bg-card: #ffffff;
+    --color-bg-featured: #ffffff;
+    --color-bg-dark-story: #1a3a2e;
+    --color-bg-divider: #dddddd;
+
+    --color-text-primary: #1a1a1a;
+    --color-text-muted: #666666;
+    --color-text-footer: #aaaaaa;
+    --color-text-dark-story: #e0e0e0;
+    --color-text-white: #ffffff;
+
+    --color-accent-gold: #e2b96f;
+    --color-accent-green: #008751;
+
+    /* typography */
+    --font-family-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    --font-size-tag: 0.7rem;
+    --font-size-body: 0.9rem;
+    --font-size-story-heading: 1.1rem;
+    --font-size-featured-heading: 1.5rem;
+    --font-size-footer: 0.85rem;
+
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    --line-height-heading: 1.3;
+    --line-height-story-heading: 1.4;
+    --line-height-body: 1.6;
+
+    /* spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+    --spacing-3xl: 32px;
+
+    /* layout */
+    --layout-max-width: 1100px;
+    --layout-gap: 2px;
+    --layout-img-height: 250px;
+
+    /* letter-spacing */
+    --letter-spacing-tap: 2px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black 2px; /* for debugging */
+}
+
+body {
+    font-family: var(--font-family-sans);
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+}
+
+.magazine {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "featured featured story-1"
+        "featured featured story-2"
+        "story-3 story-3 story-3"
+        "footer footer footer";
+    gap: var(--layout-gap);
+    max-width: var(--layout-max-width);
+    background-color: var(--color-bg-divider);
+    margin: 0 auto;
+}
+
+.mag-header {
+    grid-area: header;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-white);
+    padding: var(--spacing-xl) var(--spacing-3xl);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mag-header nav a {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    margin-left: var(--spacing-2xl);
+    font-weight: var(--font-weight-semibold);
+}
